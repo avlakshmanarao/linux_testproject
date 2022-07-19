@@ -11,5 +11,10 @@ cat << EOF
 	3. Exit
 EOF
 read option
-echo "entered option is: $option"
+if [[ $option == 3 ]]; then
+    echo "time to exit"
+	exit 99
+else
+   echo "entered option is: $option"
+fi
 done
